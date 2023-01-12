@@ -50,7 +50,8 @@
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
+  border: 1px solid #3c3636;
+  margin-right: 5px;
   transition: background 200ms, border 200ms;
 }
 
@@ -70,6 +71,8 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+  margin-top: 0.7rem;
+  padding-left: 0.7rem;
 }
 
 .center {
@@ -97,7 +100,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +128,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
