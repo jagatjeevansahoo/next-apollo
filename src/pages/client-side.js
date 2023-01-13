@@ -28,8 +28,8 @@ const ClientSide = () => {
           </a>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <Countries />
       </main>
-      <Countries />
     </div>
   );
 };
