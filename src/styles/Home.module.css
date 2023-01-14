@@ -1,3 +1,18 @@
+.headerContainer {
+  margin: 0 auto;
+  display: flex;
+  max-width: var(--max-width);
+}
+
+.headerContainer a {
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .main {
   display: flex;
   flex-direction: column;

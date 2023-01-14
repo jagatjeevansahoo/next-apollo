@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { GetStaticProps } from "next";
+import { GetServerSideProps } from "next";
 
 import { Inter } from "@next/font/google";
 
@@ -13,7 +13,7 @@ import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { data } = await client.query({
     query: gql`
       query Countries {
@@ -44,6 +44,13 @@ export default function Home(props: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.description}>
+          <p>
+            The data is fetched in the serverside, the html is created in the
+            server and sent
+          </p>
+        </div>
+
         <div className={styles.center}>
           <Image
             className={styles.logo}
